@@ -73,7 +73,8 @@ def decrypt(privKeyFileStr,FileStr,DecodedOutputFile):
 
 
 ### MAIN RUN SECTION ###
-private_key = createKeyPair("private_key.pem","public_key.pem")
+createKeyPair("private_key.pem","public_key.pem")
 encrypt('originalmsg.txt','public_key.pem')
 decrypt('private_key.pem','encryptedmsg.txt','decryptedmsg.txt')
+
 
